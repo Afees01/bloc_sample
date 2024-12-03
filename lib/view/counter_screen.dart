@@ -16,7 +16,10 @@ class CounterScreen extends StatelessWidget {
       body: BlocBuilder<CounterBloc, CounterState>(
         builder: (context, state) {
           return Center(
-            child: Text(state.count.toString()),
+            child: Text(state.count.toString(),style: TextStyle(
+                  color: Colors.blue,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 50),),
           );
         },
       ),
